@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Little Girl 2D Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body" onkeyup="keyCheck(event);">
+  <div class="loader" id="loader">
+    <div class="container">
+      <div id="myProgress">
+        <div id="myBar">
+          1%
+        </div>
+      </div>
+      <button type="submit" onclick="move()" class="button-bar">
+        <div class="play">Play</div>
+      </button>
+    </div>
+    <div class="cicklplay">Cick Play Button >>> <span class="startplay">(Start The Game)</span></div>
+  </div>
+  <div class="background" id="background">
+    <div class="score" id="score"> 0 </div>
+    <div class="coinscolleted" id="coinscolleted">0</div>
+    <img src="scoreback.png" class="scoreback" id="" />
+    <img src="coinback.png" class="coinback" id="" />
+    <img src="Idle (1).png" class="boy" id="boy" />
+    <img src="alig.gif" class="frog" />
+  </div>
+  <div class="gameover" id="gameover">
+    <div class="gameovertext"></div>
+    <div class="scorebord">
+      <div class="s">
+        <div class="">Your Score</div>
+        <div id="endscore" class=" c">0</div>
+        <div class="">Your coins</div>
+        <div id="endcoin" class="c">0</div>
+      </div>
+    </div>
+    <button class="btn" onclick="re();">Try Again</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
